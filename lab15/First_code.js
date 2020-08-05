@@ -1,66 +1,72 @@
-// Function of addition button
-add = function(){
-result = parseInt(jQuery('#op1').val()) + parseInt(jQuery('#op2').val());
-text = jQuery('#op1').val() + " + "+ jQuery('#op2').val() + " = ";
-jQuery('#result').text(result);
+ minus = function() {
+    result = parseInt(jQuery('#operand1').val()) - parseInt(jQuery('#operand2').val());
+    text = jQuery('#operand1').val() +" - "+ jQuery('#operand2').val() + " = "
+    
+
+    result = text + result;
+    jQuery('#result').html(result)
+    
+    old_div_content = jQuery('#history').html();
+    result = "<span id='min_style'>" + result + "</span>";
+    new_div_content = old_div_content + result + '<br><br>';
+    jQuery ('#history').html(new_div_content);
 }
-styled_result="<span id='addStyle'>"+result +"</span>"
+add = function() {
+    result = parseInt(jQuery('#operand1').val()) - parseInt(jQuery('#operand2').val());
+    text = jQuery('#operand1').val() +" - "+ jQuery('#operand2').val() + " = "
+    
 
-old_div_content=jQuery('#history').html();
-new_div_conent=old_div_content+ styled_result+ '<br>';
-JQuery('#history').html(new_div_content);
+    result = text + result;
+    jQuery('#result').html(result)
+    
+    old_div_content = jQuery('#history').html();
+    result = "<span id='min_style'>" + result + "</span>";
+    new_div_content = old_div_content + result + '<br><br>';
+    jQuery ('#history').html(new_div_content);
 }
+mul = function() {
+    result = parseInt(jQuery('#operand1').val()) - parseInt(jQuery('#operand2').val());
+    text = jQuery('#operand1').val() +" - "+ jQuery('#operand2').val() + " = "
+    
 
-
-
-
-// Function of Subtraction button
-Subtraction= function(){
-result = parseInt(jQuery('#op1').val()) - parseInt(jQuery('#op2').val());
-text = jQuery('#op1').val() + " - "+ jQuery('#op2').val() + " = ";
-jQuery('#result').html(result);
-
-result="<span id=divStyle'>" +result + "</span>"
-old_div_content=jQuery('#history').html();
-new_div_conent=old_div_content+ styled_result+ '<br>';
-JQuery('#history').html(new_div_content);
-
+    result = text + result;
+    jQuery('#result').html(result)
+    
+    old_div_content = jQuery('#history').html();
+    result = "<span id='min_style'>" + result + "</span>";
+    new_div_content = old_div_content + result + '<br><br>';
+    jQuery ('#history').html(new_div_content);
 }
-setup = function(){
-   // alert("hi");
-   jQuery('#subbutton').click(Subtraction);
-}
- 
-jQuery(document).ready(setup);
+divide = function() {
+    result = parseInt(jQuery('#operand1').val()) - parseInt(jQuery('#operand2').val());
+    text = jQuery('#operand1').val() +" - "+ jQuery('#operand2').val() + " = "
+    
 
-
-//Function of multiplication button
-multiplication = function(){
-result = parseInt(jQuery('#op1').html()) * parseInt(jQuery('#op2').html());
-text = jQuery('#op1').html() + " * "+ jQuery('#op2').html() + " = ";
-jQuery('#result').html(text + result);
-}
-
-setup = function(){
-   // alert("hi");
-   jQuery('#mulbutton').click(multiplication);
-  
-}
- 
-jQuery(document).ready(setup);
-
-
-// Function of a division button
-division = function(){
-result = parseInt(jQuery('#op1').html()) / parseInt(jQuery('#op2').html());
-text = jQuery('#op1').html() + " / "+ jQuery('#op2').html() + " = ";
-jQuery('#result').html(text + result);
+    result = text + result;
+    jQuery('#result').html(result)
+    
+    old_div_content = jQuery('#history').html();
+    result = "<span id='min_style'>" + result + "</span>";
+    new_div_content = old_div_content + result + '<br><br>';
+    jQuery ('#history').html(new_div_content);
 }
 
-setup = function(){
-   // alert("hi");
-   jQuery('#divbutton').click(division);
-  
-}
- 
-jQuery(document).ready(setup);
+show = function() {
+        jQuery('#history').show()
+    }
+
+    hide = function(){
+        jQuery('#history').hide()
+    } 
+
+    setup = function(){
+        jQuery('#addbutton').click(add);
+        jQuery('#subbutton').click(minus);
+        jQuery('#mulbutton').click(multiply);
+        jQuery('#divbutton').click(divide);
+        jQuery('#show_button').click(show);
+        jQuery('#hide_button').click(hide);
+    }
+
+
+    jQuery(document).ready(setup)
