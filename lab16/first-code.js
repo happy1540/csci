@@ -20,7 +20,7 @@
 	 jQuery("#outteroverout").mouseover(function(){
 		 // console. log('#outerTextoverout-> over');
 		 jQuery("#outterTextoverout").text("mouse over");
-		 za a +1;
+		 a= a +1;
 		 jQuery("outerCounterOver"). text(a+ " overs");
 	 });
 	 
