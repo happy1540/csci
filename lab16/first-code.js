@@ -3,15 +3,15 @@
 	 jQuery("#outteroverout").mouseover(function(){
 		 // alert('#outerTextoverout-> over');
 		 // console. log('#outerTextoverout-> over');
-		 jQuery("#outerTextoverout").text("mouse over");
+		 jQuery("#outterTextoverout").text("mouse over");
 		 t= t +1;
-		 jQuery("outerCounterOver"). text(t+ " overs");
+		 jQuery("outterCounterOver"). text(t+ " overs");
 	 });
 	 
 	  z= 0;
 	 jQuery("#outteroverout").mouseover(function(){
 		 // console. log('#outerTextoverout-> out');
-		 jQuery("#outerTextoverout").text("mouse out");
+		 jQuery("#outterTextoverout").text("mouse out");
 		 z= z +1;
 		 jQuery("outerCounterOver"). text(z+ " outs");
 	 });
@@ -19,7 +19,7 @@
 	   a= 0;
 	 jQuery("#outteroverout").mouseover(function(){
 		 // console. log('#outerTextoverout-> over');
-		 jQuery("#outerTextoverout").text("mouse over");
+		 jQuery("#outterTextoverout").text("mouse over");
 		 za a +1;
 		 jQuery("outerCounterOver"). text(a+ " overs");
 	 });
@@ -27,22 +27,22 @@
 	 i= 0;
 	 jQuery("#outteroverout").mouseover(function(){
 		 // console. log('#outerTextoverout-> out');
-		 jQuery("#outerTextoverout").text("mouse out");
+		 jQuery("#outterTextoverout").text("mouse out");
 		 i= i +1;
 		 jQuery("outerCounterOver"). text(i+ " outs");
 	 });
 	 
 	 d= 0;
-	 jQuery("#outerenterleave").mouseenter(function(){
+	 jQuery("#outterenterleave").mouseenter(function(){
 		 // console. log('div.enterleave-> enter');
-		 jQuery("#outerTextenterleave").text("mouse enter");
+		 jQuery("#outterTextenterleave").text("mouse enter");
 		 d= d +1;
 		 jQuery("outerCounterEnter"). text(d+ " enters");
 	 });
 	 
 	 
 	 	 n= 0;
-	 jQuery("#outerenterleave").mouseleave(function(){
+	 jQuery("#outterenterleave").mouseleave(function(){
 		 // console. log('outerTextenterleave-> exit');
 		 jQuery("#outerTextenterleave").text("mouse leave");
 		 n= n +1;
