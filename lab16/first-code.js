@@ -9,7 +9,7 @@
 	 });
 	 
 	  z= 0;
-	 jQuery("#outeroverout").mouseover(function(){
+	 jQuery("#outeroverout").mouseout(function(){
 		 // console. log('#outerTextoverout-> out');
 		 jQuery("#outerTextoverout").text("mouse out");
 		 z= z +1;
@@ -25,7 +25,7 @@
 	 });
 	 
 	 i= 0;
-	 jQuery("#inneroverout").mouseover(function(){
+	 jQuery("#inneroverout").mouseout(function(){
 		 // console. log('#outerTextoverout-> out');
 		 jQuery("#innerTextoverout").text("mouse out");
 		 i= i +1;
