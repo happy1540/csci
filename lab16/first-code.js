@@ -13,7 +13,7 @@
 		 // console. log('#outerTextoverout-> out');
 		 jQuery("#outerTextoverout").text("mouse out");
 		 z= z +1;
-		 jQuery("#outerCounterOver").text(z+ " outs");
+		 jQuery("#outerCounterOut").text(z+ " outs");
 	 });
 	 
 	   a= 0;
@@ -63,7 +63,7 @@
 		 // console. log('#innerTextenterleave-> enter');
 		 jQuery("#innerTextenterleave").text("mouse leave");
 		 y= y +1;
-		 jQuery("#innerCounterleave").text(y+ " leaves");
+		 jQuery("#innerCounterLeave").text(y+ " leaves");
 	 });
  }
  jQuery(document). ready(setup)
