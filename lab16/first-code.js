@@ -44,7 +44,7 @@
 	 	 n= 0;
 	 jQuery("#outterenterleave").mouseleave(function(){
 		 // console. log('outerTextenterleave-> exit');
-		 jQuery("#outerTextenterleave").text("mouse leave");
+		 jQuery("#outterTextenterleave").text("mouse leave");
 		 n= n +1;
 		 jQuery("outerCounterLeave"). text(n+ " leaves");
 	 });
