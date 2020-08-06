@@ -17,19 +17,19 @@
 	 });
 	 
 	   a= 0;
-	 jQuery("#outeroverout").mouseover(function(){
+	 jQuery("#inneroverout").mouseover(function(){
 		 // console. log('#outerTextoverout-> over');
-		 jQuery("#outerTextoverout").text("mouse over");
+		 jQuery("#innerTextoverout").text("mouse over");
 		 a= a +1;
-		 jQuery("#outerCounterOver").text(a+ " overs");
+		 jQuery("#innerCounterOver").text(a+ " overs");
 	 });
 	 
 	 i= 0;
-	 jQuery("#outeroverout").mouseover(function(){
+	 jQuery("#inneroverout").mouseover(function(){
 		 // console. log('#outerTextoverout-> out');
-		 jQuery("#outerTextoverout").text("mouse out");
+		 jQuery("#innerTextoverout").text("mouse out");
 		 i= i +1;
-		 jQuery("#outerCounterOver").text(i+ " outs");
+		 jQuery("#innerCounterOver").text(i+ " outs");
 	 });
 	 
 	 d= 0;
