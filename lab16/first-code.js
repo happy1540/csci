@@ -21,7 +21,7 @@
 		 // console. log('#outerTextoverout-> over');
 		 jQuery("#innerTextoverout").text("mouse over");
 		 a= a +1;
-		 jQuery("#inneroverOut").text(a+ " overs");
+		 jQuery("#innerCounterOver").text(a+ " overs");
 	 });
 	 
 	 i= 0;
