@@ -65,7 +65,6 @@
 		 y= y +1;
 		 jQuery("innerCounterleave"). text(y+ " leaves");
 	 });
-	 });
  }
  jQuery(document). ready(setup)
 	 
